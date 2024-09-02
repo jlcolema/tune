@@ -1,0 +1,353 @@
+
+
+/*-------------------------------------------
+	Base
+-------------------------------------------*/
+
+
+// No updates.
+
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+hgroup {
+
+	.page-template-template-home-php & {
+		background: url(/media/decorative-separator@2x.png) bottom center no-repeat;
+		background-size: 180px 90px;
+		}
+
+}
+
+// Logo
+
+#site-title {
+
+	a {
+		background: url(/media/logo@2x.png);
+		background-size: 200px 100px;
+		}
+
+}
+
+
+/*-------------------------------------------
+	Body
+-------------------------------------------*/
+
+// Main Content
+
+#primary {
+
+	// Default pages.
+
+	.entry {
+
+		.single-work & {
+			background-image: url(/media/fancy-separator@2x.png);
+			background-size: 482px 100px;
+			}
+
+	}
+
+	// Articles
+
+	article {
+
+		.blog & {
+			background-image: url(/media/fancy-separator@2x.png);
+			background-size: 482px 100px;
+			}
+
+		.entry {
+		
+			p {
+			
+				&.cta {
+				
+					a {
+						background-image: url(/media/arrow@2x.png);
+						background-size: 50px 100px;
+						}
+					
+				}
+				
+			}
+			
+		}
+
+	}
+
+	// Slideshow (viewed at smaller screen sizes)
+
+	.slideshow {
+
+		.slides {
+		
+			li {
+
+				background-image: url(/media/fancy-separator@2x.png);
+				background-size: 482px 100px;
+
+				.project {
+				
+					.project-details {
+					
+						p {
+						
+							&.cta {
+							
+								a {
+									background-image: url(/media/arrow@2x.png);
+									background-size: 50px 100px;
+									}
+								
+							}
+							
+						}
+					
+					}
+					 
+				}
+
+			}
+		
+		}
+		
+	}
+
+	// List of projects show on main Work page
+
+	.recent-work {
+		
+		ul {
+		
+			li {
+			
+				background-image: url(/media/fancy-separator@2x.png);
+				background-size: 482px 100px;
+				
+				.project {
+				
+					.text {
+					
+						p {
+						
+							&.cta {
+								
+								a {
+									background-image: url(/media/arrow@2x.png);
+									background-size: 50px 100px;
+									}
+								
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+		
+		}
+
+	}
+
+	// Individual project
+
+	.project {
+
+		.meta {
+			
+			.details {
+			
+				.agency {
+					background-image: url(/media/small-horizontal-separator@2x.png);
+					background-size: 13px 1px;
+					}
+				
+			}
+			
+		}
+
+		.share {
+			background:
+				url(/media/riser-right@2x.png) right top no-repeat,
+				url(/media/share-ribbon@2x.png) 0 10px no-repeat;
+			background-size: 11px 10px, 300px 44px;
+			}
+
+	}
+
+	// Navigation between individual project pages
+
+	.navigation {
+
+		.prev,
+		.next {
+
+			a {
+				background-image: url(/media/plus-minus-circle@2x.png);
+				background-size: 50px 100px;
+				}
+
+		}
+
+	}
+
+	.more-work {
+
+		a {
+			background-image: url(/media/plus-minus-circle@2x.png);
+			background-size: 50px 100px;
+			}
+		
+	}
+
+}
+
+// Page Title (slides down)
+
+.section {
+
+	background-image: url(/media/section-header-background@2x.png);
+	background-size: 20px 68px;
+	
+	.inner-wrap {
+
+		background-image: url(/media/section-header-background-left@2x.png);
+		background-size: 35px 68px;
+	
+		.inner-inner-wrap {
+
+			background-image: url(/media/section-header-background-right@2x.png);
+			background-size: 35px 68px;
+
+		}
+	
+	}
+	
+}
+
+// Funny thing about us...
+
+.opener {
+	background-image: url(/media/decorative-separator@2x.png);
+	background-size: 180px 90px;
+	}
+
+// Contact Form
+
+.contact-form {
+
+	.more {
+
+		background-image: url(/media/ribbon-background@2x.png);
+		background-size: 8px 50px;
+
+		h3 {
+			background: url(/media/plus-minus-square@2x.png) right top no-repeat;
+			background-size: 50px 100px;
+			}
+
+	}
+
+	.gform_wrapper {
+
+		form {
+
+			.gform_body {
+				
+				ul {
+				
+					li {
+
+						&#field_1_1 { background: url(/media/1@2x.png) left top no-repeat; }
+
+						&#field_1_2 { background: url(/media/2@2x.png) left top no-repeat; }
+
+						&#field_1_3 { background: url(/media/3@2x.png) left top no-repeat; }
+
+						&#field_1_1,
+						&#field_1_2,
+						&#field_1_3 { background-size: 50px 50px; }
+
+					}
+				
+				}
+				
+			}
+			
+		}
+		
+	}
+
+}
+
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+#footer {
+
+	.inner-wrap {
+
+		.inner-inner-wrap {
+			background-image: url(/media/decorative-separator@2x.png);
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			background-size: 180px 90px;
+
+			@include breakpoint(min-width, 860px) { background: none; }
+
+		}
+
+	}
+
+	.widget-wrap {
+	
+		.recent-posts {
+			
+			.recent-post {
+			
+				p {
+				
+					&.author {
+						background-image: url(/media/small-horizontal-separator@2x.png);
+						background-size: 13px 1px;
+						}
+					
+				}
+			
+			}					
+
+		}
+		
+	}
+
+}
+
+/*-------------------------------------------
+	Misc.
+-------------------------------------------*/
+
+
+// Decorative corners
+
+.ul-corner,
+.ur-corner,
+.lr-corner,
+.ll-corner {
+	background-image: url(/media/corner-stars@2x.png);
+	background-size: 74px 74px;
+	}
+
+#wp_maintenance_mode h1 {
+	background-image: url(/media/logo@2x.png);
+	background-size: 200px 100px;
+	}

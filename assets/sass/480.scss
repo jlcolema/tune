@@ -1,0 +1,386 @@
+
+
+/*-------------------------------------------
+	Base
+-------------------------------------------*/
+
+
+// No updates.
+
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+// No updates.
+
+
+/*-------------------------------------------
+	Body
+-------------------------------------------*/
+
+#body {
+	
+	.ie7 .home & {
+		padding-left: 0;
+		padding-right: 0;
+		}
+	
+}
+
+// Main Content
+
+#primary {
+
+	// Default pages.
+
+	.entry {
+
+		.ie7 .home & {
+			padding-left: 25px;
+			padding-right: 25px;
+			}
+
+		.ie7 .page-template-template-contact-php & { padding: 0 !important; }
+
+		blockquote {
+		
+			&.work-testimonial {
+
+				@include group();
+		
+				img {
+					display: block;
+					float: left;
+					}
+
+				div {
+
+					padding-left: 100px;
+
+				}
+
+			}
+		
+		}
+
+	}
+
+	// Articles
+
+	article {
+
+		.inner-wrap {
+
+			.ie7 .blog & {
+				padding: 20px !important;
+				background: $white;
+				}
+
+			.ie8 .blog & {
+				padding: 20px;
+				background: $white;
+				}
+
+			.meta {
+
+				.ie7 .blog & { margin: 0 0 15px 0; }
+			
+			}
+
+		}
+
+		.entry {
+		
+			.services-wrap {
+				margin-top: 20px;
+				padding-top: 35px;
+				border-top: 4px double $gold;
+				}
+	
+			.list-of-services {
+	
+				@include group();
+		
+				li {
+	
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+					min-height: 120px;
+					margin: 0;
+					padding-left: 120px;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					border-bottom: 4px double $gold;
+	
+					strong {}
+	
+					&.coding {
+						padding-top: 0;
+						background-position: left top;
+						background-image: url(/media/coding-100.png);
+						}
+					
+					&.web-hosting {
+						padding-top: 20px;
+						padding-bottom: 60px;
+						background-position: left 20px;
+						background-image: url(/media/web-hosting-100.png);
+						}
+					
+					&.consulting {
+						padding-top: 20px;
+						background-position: left 20px;
+						background-image: url(/media/consulting-100.png);
+						}
+					
+					&.misc {
+						padding-top: 20px;
+						padding-bottom: 0;
+						border-bottom: none;
+						background-position: left 20px;
+						background-image: url(/media/misc-100.png);
+						}
+
+					@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+					
+						&.coding {
+							background-image: url(/media/coding@2x.png);
+							background-size: 100px 100px;
+							}
+						
+						&.web-hosting {
+							background-image: url(/media/web-hosting@2x.png);
+							background-size: 100px 100px;
+							}
+						
+						&.consulting {
+							background-image: url(/media/consulting@2x.png);
+							background-size: 100px 100px;
+							}
+						
+						&.misc {
+							background-image: url(/media/misc@2x.png);
+							background-size: 100px 100px;
+							}
+					
+					}
+	
+				}
+			
+			}
+		
+		}
+
+		.postmetadata {
+
+			.ie7 .blog & {
+				margin: 20px 0 0 0;
+				@include font-size(16);
+				font-weight: normal;
+				font-family: $proxima-nova;
+				text-transform: uppercase;
+				}
+
+			.ie8 .blog & {
+				margin-top: 10px;
+				font-size: 0.8em; // Need to review.
+				font-weight: normal;
+				font-family: $proxima-nova;
+				text-transform: uppercase;
+				}
+
+		}
+		
+	}
+
+	// Featured work on home page (viewed while on larger screens)
+
+	.flexslider,
+	.featured-work {
+
+		.slides {
+		
+			li {
+
+				.ie7 &,
+				.ie8 & {
+					padding-bottom: 0;
+					background: none;
+					}
+			
+				.project {
+
+					.project-details {
+
+						// Project description
+						
+						p {
+						
+							&.cta {
+
+								.ie8 & { padding-bottom: 0; }
+
+							}
+							
+						}
+					
+					}
+					
+				}
+			
+			}
+		
+		}
+
+	}
+
+	// Individual project
+
+	.project {
+
+		.meta {
+		
+			.services {
+			
+				ul {
+				
+					li {
+						
+						.ie7 & {
+							display: inline;
+							padding: 1.5% 20px 1.5% 0;
+							}
+						
+					}
+					
+				}
+			
+			}
+		
+		}
+
+	}
+
+	// Navigation between individual project pages
+
+	.navigation {
+
+		h3 {
+
+			.ie7 &,
+			.ie8 & { margin-bottom: 0; }
+		
+		}
+
+	}
+
+	.more {
+
+		.ie7 .single-work & {
+			position: static;
+			left: 0;
+			padding-bottom: 0;
+			}
+
+		a {
+		
+			.ie7 .single-work & { width: auto; }
+			
+		}
+		
+	}
+
+}
+
+// Section header (for Work on home page)
+
+.banner {
+
+	.ie7 .home &,
+	.ie8 .home & { display: none; } // Temporary fix.
+
+}
+
+// Contact Form
+
+.contact-form {
+
+	.ie8 .home & { margin-bottom: 0; }
+
+}
+
+// Wrapper for contact information on Contact page.
+
+.contact-details {
+
+	.ie7 &,
+	.ie8 & {
+		padding: 20px 20px 0 20px;
+		background: $white;
+		}
+
+	h3 {
+		
+		.ie7 &,
+		.ie8 & {
+			margin-bottom: 5px;
+			text-transform: uppercase;
+			}
+		
+	}
+
+}
+
+// Map
+
+.map-wrap {
+
+	.ie7 & {
+		padding-left: 0;
+		padding-right: 0;
+		}
+
+	.ie7 .page-template-template-contact-php .entry & {
+		padding: 0;
+		border: none !important;
+		}
+
+	#map_canvas { height: 400px; }
+
+}
+
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {
+
+	.widget-wrap {
+	
+		.support {
+
+			.ie7 & {
+				width: 100%;
+				margin-right: -45px;
+				padding: 10px 45px;
+				}
+			
+		}
+	
+	}
+
+}
+
+
+/*-------------------------------------------
+	Misc.
+-------------------------------------------*/
+
+
+// No updates.
+

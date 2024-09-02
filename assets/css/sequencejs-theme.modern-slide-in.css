@@ -1,0 +1,321 @@
+body {
+	margin: 50px;
+	background: rgb(238, 233, 226) url(../images/background.png);
+	}
+
+	.new-slideshow-container {
+		max-width: 849px;
+		margin: 0 auto;
+		-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+		-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+		box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+		}
+
+		.new-slideshow-inner-wrap {
+			position: relative;
+			width: 100%;
+			}
+
+			.new-slideshow-navigation {}
+
+				.next,
+				.prev {
+					display: none;
+					position: absolute;
+					top: 50%;
+					width: 50px;
+					height: 50px;
+					margin-top: -25px;
+					font-weight: bold;
+					color: rgb(255, 255, 255);
+					background: rgb(186, 163, 131);
+					cursor: pointer;
+					z-index: 1000;
+					}
+
+				.next,
+				.prev { position: absolute; }
+
+				.prev { left: -10px; }
+				
+				.next { right: -10px; }
+				
+			#sequence {
+				position: relative;
+				display: block;
+				max-width: 849px;
+				height: 100%;
+				margin: 0 auto;
+				background: rgb(255, 255, 255);
+				/* backface-visibility prevents graphical glitches when frames are animating */
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				-o-backface-visibility: hidden;
+				backface-visibility: hidden;
+				}
+
+				#sequence ul {
+					overflow: hidden;
+					margin: 0;
+					padding: 0;
+					}
+
+					#sequence li {
+						position: relative !important;
+						width: 100% !important;
+						float: left !important;
+						margin-right: -100% !important;
+						}
+
+					#sequence li img {
+						width: 100%;
+						max-width: 100%;
+						height: auto;
+						}
+
+					h2, h3 {
+						font-family: Helvetica, Arial, sans-serif;
+						font-size: 16px;
+						line-height: 20px;
+						}
+
+					/* Project Image */
+
+					.img {
+						left: 25%;
+						opacity: 0;
+						position: relative;
+						height: auto !important;
+						max-height: 600px !important;
+						}
+
+					.img.animate-in {
+						left: 0;
+						opacity: 1;
+						-webkit-transition-duration: 1s;
+						-moz-transition-duration: 1s;
+						-o-transition-duration: 1s;
+						-ms-transition-duration: 1s;
+						transition-duration: 1s;
+						}
+
+					.img.animate-out {
+						left: -125%;
+						opacity: 0;
+						-webkit-transition-duration: 1s;
+						-moz-transition-duration: 1s;
+						-o-transition-duration: 1s;
+						-ms-transition-duration: 1s;
+						transition-duration: 1s;
+						}
+
+					.details {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						height: 50px;
+						opacity: 0;
+						background: rgb(81, 80, 78);
+						background: rgba(81, 80, 78, .95);
+						z-index: 50;
+						}
+
+					.details.animate-in {
+						opacity: 1;
+						-webkit-transition-duration: .5s;
+						-moz-transition-duration: .5s;
+						-o-transition-duration: .5s;
+						-ms-transition-duration: .5s;
+						transition-duration: .5s;
+						}
+
+					.details.animate-out {
+						opacity: 0;
+						-webkit-transition-duration: .5s;
+						-moz-transition-duration: .5s;
+						-o-transition-duration: .5s;
+						-ms-transition-duration: .5s;
+						transition-duration: .5s;
+						}
+
+						/* Project Title */
+	
+						.title {
+							position: absolute;
+							left: 250px;
+							bottom: 0;
+							opacity: 0;
+							height: 34px;
+							margin: 0;
+							padding: 16px 0 0 17px;
+							color: rgb(255, 255, 255);
+							z-index: 50;
+							}
+						
+						.animate-in .title {
+							left: 0px;
+							opacity: 1;
+							-webkit-transition-duration: .5s;
+							-moz-transition-duration: .5s;
+							-o-transition-duration: .5s;
+							-ms-transition-duration: .5s;
+							transition-duration: .5s;
+							}
+	
+						.animate-out .title {
+							left: 250px;
+							opacity: 0;
+							-webkit-transition-duration: 1s;
+							-moz-transition-duration: 1s;
+							-o-transition-duration: 1s;
+							-ms-transition-duration: 1s;
+							transition-duration: 1s;
+							}
+	
+						/* Visit Project */
+						
+						.cta {
+							position: absolute;
+							right: 150px;
+							opacity: 0;
+							bottom: 0;
+							width: 200px;
+							height: 50px;
+							margin: 0;
+							text-align: right;
+							}
+	
+							.cta a {
+								display: block;
+								width: 185px;
+								height: 34px;
+								padding: 16px 17px 0 0;
+								color: rgb(255, 255, 255);
+								}
+	
+						.animate-in .cta {
+							right: 0;
+							opacity: 1;
+							-webkit-transition-duration: .5s;
+							-moz-transition-duration: .5s;
+							-o-transition-duration: .5s;
+							-ms-transition-duration: .5s;
+							transition-duration: .5s;
+							}
+	
+						.animate-out .cta {
+							right: 150px;
+							opacity: 0;
+							-webkit-transition-duration: 1s;
+							-moz-transition-duration: 1s;
+							-o-transition-duration: 1s;
+							-ms-transition-duration: 1s;
+							transition-duration: 1s;
+							}
+
+@media only screen and (min-width : 992px) {
+
+	.title {}
+
+}
+
+@media only screen and (max-width : 838px) {
+
+	#header {}
+	
+	.img { width: auto; }
+}
+
+@media only screen and (max-width : 768px) {
+
+	#header {}
+	
+	.title{}
+	
+	.cta {}
+	
+	.next,
+	.prev {}
+	
+	.img {}
+
+}
+
+@media only screen
+and (max-width : 568px) {
+
+	.img {}
+	
+	.img.animate-in {}
+	
+	.img.animate-out {}
+	
+	.title {}
+	
+	.title.animate-in {}
+	
+	.title.animate-out {}
+	
+	.cta {}
+	
+}
+
+@media only screen
+and (max-width : 518px) {
+
+	#header {}
+
+}
+
+@media only screen
+and (max-width : 468px) {
+
+	#header {}
+	
+}
+
+@media only screen
+and (max-width : 418px) {
+
+	#header {}
+
+}
+
+@media only screen
+and (max-width : 368px) {
+
+	#header {}
+
+	.title {}
+
+}
+
+@media 	only screen
+		and (max-width : 320px)
+		and (orientation : portrait) { /*iphone portrait*/
+
+	#header {}
+	
+	.img {}
+	
+	.img.animate-in {}
+	
+	.img.animate-out {}
+}
+
+@media 	only screen
+		and (min-width : 321px)
+		and (max-width : 480px)
+		and (orientation : landscape) {
+
+		#header {}
+		
+		.img {}
+		
+		.img.animate-in {}
+		
+		.img.animate-out {}
+		
+}

@@ -1,0 +1,8 @@
+[08-Nov-2012 09:55:52 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[15-Dec-2012 04:38:38 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[28-Dec-2012 14:30:50 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[14-Jan-2013 04:24:53 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[16-Mar-2013 04:32:55 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[29-Mar-2013 05:25:27 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[15-Apr-2013 04:07:25 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[15-May-2013 04:03:52 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1

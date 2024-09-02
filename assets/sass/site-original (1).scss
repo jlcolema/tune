@@ -1,0 +1,385 @@
+
+/*-------------------------------------------
+	Body
+-------------------------------------------*/
+
+						// Work Page
+
+						.caption { padding: 16px 0 0 0; }
+
+						.recent-work li:last-child,
+						.slideshow .slides li:last-child {
+							padding-bottom: 0;
+							background: none;
+							margin-bottom: 30px;
+							}
+
+							.project,
+							.blog article .inner-wrap {
+								padding: 20px;
+								background: $white;
+								}
+
+							.single-work .project {
+								position: relative;
+								padding-bottom: 100px;
+								z-index: 1;
+								}
+
+								.project .meta { margin: 0 0 25px 0; }
+
+								.project .img {
+									margin-bottom: 5px;
+									padding: 5px;
+									border: 4px double $gold;
+									position: relative;
+									}
+									
+								.ipad_image {
+									position: absolute;
+									bottom: 0;
+									right: 50%;
+									width: 25%;
+									-webkit-box-shadow: 0px 0px 15px 0px rgba($black, .35);
+									-moz-box-shadow: 0px 0px 15px 0px rgba($black, .35);
+									box-shadow: 0px 0px 15px 0px rgba($black, .35);
+									}
+									
+								.iphone_image {
+									position: absolute;
+									bottom: 0;
+									right: 0;
+									width: 12%;
+									-webkit-box-shadow: 0px 0px 15px 0px rgba($black, .35);
+									-moz-box-shadow: 0px 0px 15px 0px rgba($black, .35);
+									box-shadow: 0px 0px 15px 0px rgba($black, .35);
+									}
+
+								.single-work .img { margin-bottom: 5px; }
+
+									.project img { display: block; }
+
+								.single-work .project ul {
+									
+									li { margin-bottom: 30px; }
+									
+								}
+
+								.single-work .project h1,
+								.recent-work h4,
+								.slideshow .slides h4,
+								.page-title {
+									@include font-size(32);
+									margin-bottom: 7px;
+									}
+
+									.single-work .project h1,
+									.recent-work h4 a,
+									.slideshow .slides h4 a,
+									.page-title { color: $gold; }
+
+									.page-template-template-services-php .entry h4,
+									.page-template-template-about-php .entry h4 {
+										margin-bottom: 15px;
+										padding-bottom: 20px;
+										color: $gold;
+										text-transform: uppercase;
+										@include font-size(16);
+										font-weight: normal;
+										font-family: $proxima-nova;
+										background: url(/media/small-horizontal-separator.png) left bottom no-repeat;
+										}
+
+								.project .agency {
+									margin-bottom: 15px;
+									padding-bottom: 15px;
+									color: $gold;
+									@include font-size(16);
+									font-family: $proxima-nova;
+									text-transform: uppercase;
+									background: url(/media/small-horizontal-separator.png) left bottom no-repeat;
+									}
+
+
+									.project .agency strong { font-weight: normal; }
+
+									.project .agency a { color: $gold; }
+
+								.project .overview {
+									margin-bottom: 20px;
+									padding-bottom: 10px;
+									border-bottom: 1px solid $gold;
+									}
+
+									.project .overview p { margin-bottom: 15px; }
+
+								.project .url {
+									margin-top: 20px;
+									@include font-size(16);
+									font-family: $proxima-nova;
+									font-weight: bold;
+									text-transform: uppercase;
+									}
+
+									.project .url a { color: $gold; }
+
+								.recent-work p {}
+	
+								.recent-work .cta,
+								.slideshow .slides .cta,
+								.blog .cta {
+									margin-top: 20px;
+									@include font-size(18);
+									font-family: $proxima-nova;
+									}
+	
+									.recent-work .cta a,
+									.slideshow .slides .cta a,
+									.blog .cta a {
+										position: relative;
+										display: inline-block;
+										height: 35px;
+										padding: 15px 65px 0 15px;
+										color: $white;
+										background: $gold url(/media/arrow.png) right center no-repeat;
+										z-index: 1;
+										}
+		
+								.single-work .more,
+								.recent-work .more {}
+
+								.ie7 .single-work p.more {
+									position: relative;
+									left: -45px;
+									}
+
+									.single-work .more a,
+									.recent-work .more a,
+									.slideshow + .more a {
+										display: block;
+										height: 36px;
+										padding: 14px 65px 0 15px;
+										color: $white;
+										background: $gold url(/media/plus-minus-circle.png) right top no-repeat;
+										@include font-size(18);
+										font-family: $proxima-nova;
+										}
+
+									.ie7 .single-work p.more a { width: 101%; }
+
+								.project .services { padding: 0 4% 1% 4%; }
+
+									.project .services h3 {
+										margin-bottom: 15px;
+										@include font-size(16);
+										font-family: $proxima-nova;
+										font-weight: bold;
+										text-transform: uppercase;
+										color: $gold;
+										}
+
+									.project .services ul {}
+
+										.project .services li {
+											display: block;
+											margin: 0;
+											padding: 0 0 15px;
+											color: $brown;
+											font-family: $proxima-nova;
+											text-transform: uppercase;
+											@include font-size(17);
+											}
+								
+								.project .share,
+								article.post .share {
+									position: absolute;
+									right: -11px;
+									bottom: 60px;
+									z-index: 5;
+									height: 44px;
+									padding: 10px 0 0 0;
+									background: url(/media/riser-right.png) top right no-repeat;
+									}
+
+									.share-inner-wrap {
+										height: 44px;
+										padding: 0 11px 0 15px;
+										background: url(/media/share-ribbon.png) 0 0 no-repeat;
+										}
+
+								.single-post #secondary .share {
+									position: absolute;
+									right: -11px;
+									height: 44px;
+									padding: 10px 0 0 0;
+									background: url(/media/riser-right.png) top right no-repeat;
+									}
+
+
+									.project .share h2,
+									.single-post #secondary .share h2 {
+										display: none;
+										float: left;
+										height: 35px;
+										font-style: italic;
+										font-weight: 400;
+										padding: 9px 10px 0 20px;
+										text-shadow: 0 1px 0 rgba($white, .35);
+										}
+
+									.project .share ul,
+									.single-post #secondary .share ul { float: left; }
+
+										.project .share li,
+										.single-post #secondary .share li {
+											float: left;
+											margin: 12px 0 0 12px;
+											}
+
+										.single-post #secondary .share .facebook { margin: 10px 0 0 12px; }
+
+			.single-post .meta {
+				margin: 0 0 15px 0;
+				}
+
+			.blog article .postmetadata,
+			.single-post .postmetadata {
+				margin: 20px 0 0 0;
+				@include font-size(16);
+				font-weight: normal;
+				font-family: $proxima-nova;
+				text-transform: uppercase;
+				}
+
+			.blog article .postmetadata { margin: 10px 0 0 0; }
+
+				.single-post .entry-content h2 { margin-bottom: 12px; }
+
+				.single-post .entry-content h3 { margin-bottom: 12px; }
+
+				.single-post .entry-content ol { padding: 0 0 0 24px; }
+
+					.single-post .entry-content ol li {
+						margin-bottom: 12px;
+						}
+
+				.single-post .entry-content ul {
+					list-style-type: square;
+					padding: 0 0 0 20px;
+					}
+
+					.single-post .entry-content ul li { margin-bottom: 12px; }
+
+					.single-post .entry-content a { color: $gold; }
+
+			// Navigation Between Posts
+
+			.navigation {
+
+				clear: both;
+				position: relative;
+				background: $gold;
+				font-family: $proxima-nova;
+				font-weight: 500;
+				z-index: 1;
+
+				h3 {
+
+					text-align: center;
+					text-transform: uppercase;
+					margin-bottom:12px;
+
+					a {
+						display: block;
+						height: 37px;
+						padding: 13px 0 0 0;
+						color: $white;
+						}
+				
+				}
+
+				.next,
+				.prev {
+
+					position: absolute;
+					top: 0;
+					@include font-size(16);
+					z-index: 5;
+
+					a {
+						display: block;
+						height: 35px;
+						padding-top: 15px;
+						color: $white;
+						background: url(/media/plus-minus-circle.png) no-repeat;
+						}
+
+				}
+
+				.next {
+
+					right: 0;
+
+					a {
+						padding-right: 50px;
+						background-position: right top;
+						}
+
+				}
+
+				.prev {
+
+					left: 0;
+
+					a {
+						padding-left: 50px;
+						background-position: left bottom;
+						}
+
+				}
+
+			}
+
+			#author-info {
+
+				margin: 40px 0 0 0;
+				padding: 20px 20px 20px 20px;
+				background: $tan;
+
+				h3 {
+					margin-bottom: 7px;
+					font-family: $proxima-nova;
+					font-weight: 700;
+					text-transform: uppercase;
+					@include font-size(14);
+					}
+
+				#author-description {
+
+					#author-avatar {
+
+						position: relative;
+						top: 5px;
+						float: left;
+						margin: 0 12px 0 0;
+						padding: 3px;
+						border: 1px solid $gold;
+
+						img { display: block; }
+
+					}
+
+					p {
+
+						@include font-size(16);
+						line-height: 1.375em; /* 22px / 16px = 1.25em */
+
+						&:last-child { padding: 0; }
+
+					}
+
+				}
+
+			}
+
+	.ie8 .blog .meta { margin: 0 0 15px 0; } /* Need to review further. Wasn't working in media query for IE8. */

@@ -1,0 +1,2 @@
+[08-Nov-2012 09:55:52 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
+[15-Dec-2012 04:38:38 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/tune/public_html/tunedevelopment.com/tune-content/themes/tune/index.php on line 1
